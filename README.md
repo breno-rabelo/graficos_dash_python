@@ -1,71 +1,39 @@
-Ecommerce Estatística Dashboard
-Este projeto cria uma aplicação interativa de visualização de dados de um dataset de ecommerce, utilizando Dash, Plotly e Seaborn. A aplicação exibe gráficos interativos para explorar métricas de vendas, como notas de produtos, descontos aplicados, quantidade de produtos vendidos e muito mais.
+# E-commerce Data Visualizations
 
-Tecnologias Utilizadas
-Python 3.x
-Dash - Framework para construção de aplicações web interativas.
-Plotly - Biblioteca para criação de gráficos interativos.
-Seaborn - Biblioteca para visualização de dados estatísticos.
-Pandas - Biblioteca para manipulação de dados.
-Matplotlib - Biblioteca para criação de gráficos estáticos.
-Funcionalidades
-A aplicação inclui os seguintes gráficos interativos:
+Este projeto apresenta uma série de visualizações interativas utilizando dados de e-commerce, com o objetivo de explorar e analisar diferentes métricas de vendas, como notas, descontos, quantidade de vendas, e muito mais. As visualizações são implementadas utilizando bibliotecas como Plotly, Seaborn, e Dash.
 
-Histograma: Mostra a distribuição das notas dos produtos.
-Gráfico de Dispersão: Relação entre o desconto e a quantidade de produtos vendidos.
-Gráfico de Barras: Comparação da quantidade de produtos vendidos por marca.
-Gráfico de Densidade: Visualiza a distribuição dos descontos aplicados.
-Gráfico de Pizza: Mostra a distribuição das vendas por gênero.
-Gráfico de Regressão: Exibe a relação entre o desconto e a quantidade de vendas.
-Mapa de Calor: Exibe a correlação entre algumas variáveis importantes.
-Pré-requisitos
-Antes de executar a aplicação, você precisa instalar as bibliotecas necessárias. Você pode fazer isso utilizando o pip:
+## Tecnologias Utilizadas
+- Python: Linguagem de programação utilizada.
+- Dash: Framework para criar aplicações web interativas.
+- Plotly: Biblioteca para gerar gráficos interativos.
+- Seaborn: Biblioteca para visualizações de estatísticas e gráficos de densidade.
+- Pandas: Biblioteca para manipulação de dados.
+- 
+## Como Usar
 
-bash
-Copiar
-Editar
-pip install pandas dash plotly seaborn matplotlib
-Como Usar
-Clone este repositório para sua máquina local:
+1. Instale as dependências necessárias:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Clone o repositório 
+   ```bash
+   git clone https://github.com/seu-usuario/ecommerce-data-visualizations.git
+   cd ecommerce-data-visualizations
+   ```
+3. Coloque o arquivo ecommerce_estatistica.csv na mesma pasta do script ou altere o caminho do arquivo no código conforme necessário.
+4. ```bash
+   python app.py
+   ```
 
-bash
-Copiar
-Editar
-git clone https://github.com/seu_usuario/ecommerce_dashboard.git
-Navegue até o diretório do projeto:
+## Descrição das Visualizações
+O aplicativo exibe os seguintes gráficos:
 
-bash
-Copiar
-Editar
-cd ecommerce_dashboard
-Garanta que o arquivo ecommerce_estatistica.csv esteja no mesmo diretório ou forneça o caminho correto para o arquivo CSV.
+- Histograma das Notas: Distribuição das notas dos produtos.
+- Relação de Descontos e Quantidade Vendida: Gráfico de dispersão entre descontos e quantidade de vendas.
+- Vendas por Marca: Gráfico de barras mostrando a quantidade de produtos vendidos por marca.
+- Distribuição de Descontos: Gráfico de densidade dos valores de desconto normalizados.
+- Vendas por Gênero: Gráfico de pizza mostrando a distribuição de vendas por gênero.
+- Regressão entre Desconto e Quantidade Vendida: Gráfico de regressão mostrando a relação entre desconto e quantidade de vendas.
+- Mapa de Calor: Mapa de calor para exibir correlações entre variáveis numéricas.
 
-Execute o arquivo Python:
 
-bash
-Copiar
-Editar
-python app.py
-Acesse a aplicação no seu navegador:
-
-cpp
-Copiar
-Editar
-http://127.0.0.1:8050/
-Estrutura do Projeto
-bash
-Copiar
-Editar
-ecommerce_dashboard/
-│
-├── app.py                  # Arquivo principal da aplicação Dash
-├── ecommerce_estatistica.csv # Dataset utilizado para gerar os gráficos
-├── README.md               # Este arquivo
-
-Observações
-
-Certifique-se de que o arquivo ecommerce_estatistica.csv tenha o formato correto e que as colunas mencionadas no código existam. Caso contrário, será necessário ajustar o código de acordo com o seu dataset.
-A aplicação pode ser estendida com mais gráficos interativos ou análise de dados.
-
-Contribuições
-Se você quiser contribuir com melhorias ou novas funcionalidades, sinta-se à vontade para fazer um fork deste repositório e enviar um pull request.
